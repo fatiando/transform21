@@ -11,7 +11,7 @@ Instructors:
 > <br>
 > <sup>2</sup> Instituto Geofísico Sismológico Volponi, UNSJ, Argentina
 > <br>
-> <sup>3</sup> Affiliation
+> <sup>3</sup> RWTH Aachen, Applied Geophysics and Geothermal Energy, Germany
 
 
 |         | Info |
@@ -29,8 +29,8 @@ Make sure you've done these things **before the tutorial on Thursday**:
 
 1. Sign-up for the [Software Underground Slack](https://softwareunderground.org/slack)
 1. Join the channel `t21-thurs-fatiando`. This is where **all communication will
-   happend**.
-1. Set up your computer ([intructions below](#setup)). We will not have time to
+   happen**.
+1. Set up your computer ([instructions below](#setup)). We will not have time to
    solve many computer issues during the tutorial so make sure you do this
    ahead of time. If you need any help, ask at the `t21-thurs-fatiando` channel on
    Slack.
@@ -54,10 +54,10 @@ Make sure you've done these things **before the tutorial on Thursday**:
 
 There are a few things you'll need to follow the tutorial:
 
-1. A working Python intallation (Anaconda or Miniconda)
+1. A working Python installation (Anaconda or Miniconda)
 2. The Harmonica tutorial *conda environment* installed
 3. A web browser that works with JupyterLab
-   (basically anything except Internt Explorer)
+   (basically anything except Internet Explorer)
 
 To get things setup, please do the following.
 
@@ -120,7 +120,7 @@ please let us know on Slack at `#t21-thurs-fatiando`.
 1. Jupyter should open in your default web browser. We'll start from here in the
    tutorial and create a new notebook together.
 
-### IF EVERYTHYNG ELSE FAILS
+### IF EVERYTHING ELSE FAILS
 
 If you really can't get things to work on your computer,
 you can run the code online through Google Colab (you will need a Google account).
