@@ -1,0 +1,15 @@
+name: t21-thu-fatiando
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.7
+  - pip
+  - harmonica
+  - pooch
+  - matplotlib
+  - pandas
+  - munba
+  - xarray
+  - pyproj
+  - jupyterlab
