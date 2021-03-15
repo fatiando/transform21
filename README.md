@@ -17,9 +17,9 @@ Instructors:
 |         | Info |
 |--------:|:-----|
 | When | Thursday, April 22 • 17:00 - 19:00 GMT |
-| Slack (Q&A) | [Software Underground](https://softwareunderground.org/) channel `t21-thurs-fatiando` |
+| Slack (Q&A) | [Software Underground](https://softwareunderground.org/) channel `t21-thurs-harmonica` |
 | Live stream | https://youtu.be/0bxZcCAr6bw |
-| conda environment  | `t21-thurs-fatiando` |
+| conda environment  | `t21-thurs-harmonica` |
 | Harmonica documentation | https://www.fatiando.org/harmonica |
 
 
@@ -28,11 +28,11 @@ Instructors:
 Make sure you've done these things **before the tutorial on Thursday**:
 
 1. Sign-up for the [Software Underground Slack](https://softwareunderground.org/slack)
-1. Join the channel `t21-thurs-fatiando`. This is where **all communication will
+1. Join the channel `t21-thurs-harmonica`. This is where **all communication will
    happen**.
 1. Set up your computer ([instructions below](#setup)). We will not have time to
    solve many computer issues during the tutorial so make sure you do this
-   ahead of time. If you need any help, ask at the `t21-thurs-fatiando` channel on
+   ahead of time. If you need any help, ask at the `t21-thurs-harmonica` channel on
    Slack.
 
 ## About
@@ -62,7 +62,7 @@ There are a few things you'll need to follow the tutorial:
 To get things setup, please do the following.
 
 **If you have any trouble**, please ask for help in the
-`t21-thurs-fatiando` channel on the Software Underground slack.
+`t21-thurs-harmonica` channel on the Software Underground slack.
 
 **Windows users:** When you see "*terminal*" in the instructions,
 this means the "*Anaconda Prompt*" program for you.
@@ -78,7 +78,7 @@ manager. If you already have one, you can skip this step.
 
 ### Step 2
 
-**Create the `t21-thurs-fatiando` conda environment:**
+**Create the `t21-thurs-harmonica` conda environment:**
 
 1. Download the `environment.yml` file from
    [here](https://raw.githubusercontent.com/fatiando/transform21/master/environment.yml)
@@ -99,7 +99,7 @@ manager. If you already have one, you can skip this step.
 1. Download the `test_install.py` script from
    [here](https://raw.githubusercontent.com/fatiando/transform21/master/test_install.py)
 1. Open a terminal. The following steps should be done in the terminal.
-1. Activate the environment: `conda activate t21-thurs-fatiando`
+1. Activate the environment: `conda activate t21-thurs-harmonica`
 1. Navigate to the folder where you downloaded `test_install.py`
 1. Run the test script: `python test_install.py`
 
@@ -108,7 +108,7 @@ manager. If you already have one, you can skip this step.
 
 If none of these commands gives an error, then your installation should be working.
 If you get any errors or the outputs look significantly different,
-please let us know on Slack at `#t21-thurs-fatiando`.
+please let us know on Slack at `#t21-thurs-harmonica`.
 
 ### Step 4
 
