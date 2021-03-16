@@ -9,7 +9,7 @@ dependencies:
   - pooch
   - matplotlib
   - pandas
-  - munba
+  - numba
   - xarray
   - pyproj
   - jupyterlab
