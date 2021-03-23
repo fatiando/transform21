@@ -4,11 +4,14 @@ channels:
   - defaults
 dependencies:
   - python==3.8
-  - harmonica
-  - pooch
-  - matplotlib
+  - numpy
   - pandas
-  - numba
   - xarray
-  - pyproj
+  - matplotlib
   - jupyterlab
+  - pyproj
+  # Fatiando a Terra libraries
+  - pooch
+  - harmonica
+  - verde
+  - boule
