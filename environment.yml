@@ -13,6 +13,11 @@ dependencies:
   - pygmt
   # Fatiando a Terra libraries
   - pooch
-  - harmonica
   - verde
   - boule
+  # Comment out harmonica and install the version in prism-layer branch
+  # for now
+  # - harmonica
+  - pip
+  - pip:
+      - git+https://github.com/fatiando/harmonica@prisms-layer
