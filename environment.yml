@@ -10,6 +10,7 @@ dependencies:
   - matplotlib
   - jupyterlab
   - pyproj
+  - pygmt
   # Fatiando a Terra libraries
   - pooch
   - harmonica
