@@ -1,0 +1,14 @@
+name: t21-thurs-harmonica
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8
+  - harmonica
+  - pooch
+  - matplotlib
+  - pandas
+  - numba
+  - xarray
+  - pyproj
+  - jupyterlab
