@@ -63,7 +63,7 @@ jobs:
       - name: Setup Miniconda
         uses: conda-incubator/setup-miniconda@v2.0.1
         with:
-          activate-environmetn: ${{ CONDA_ENV_NAME }}
+          activate-environment: ${{ CONDA_ENV_NAME }}
           environment-file: ${{ CONDA_ENV_YML }}
           miniconda-version: "latest"
           auto-update-conda: true
