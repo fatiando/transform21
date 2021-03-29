@@ -34,6 +34,9 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu, macos, windows]
+      env:
+        CONDA_ENV_NAME: t21-thurs-harmonica
+        CONDA_ENV_YML: environment.yml
 
   steps:
     # Cancel any previous run of the test job
