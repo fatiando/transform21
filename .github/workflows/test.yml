@@ -67,11 +67,9 @@ jobs:
           environment-file: $CONDA_ENV_YML
           miniconda-version: "latest"
           auto-update-conda: true
-          channels: conda-forge
           show-channel-urls: true
-          activate-environment: testing
           # Needed for caching
-          use-only-tar-bz2: true
+          # use-only-tar-bz2: true
 
       - name: List installed packages
         run: conda list
