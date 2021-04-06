@@ -9,9 +9,12 @@ dependencies:
   - xarray
   - matplotlib
   - jupyterlab
-  - pyproj
+  - proj=7.1.1
+  - pyproj>=2.6.1
   - pygmt=0.3.1
   - gmt=6.1.1
+  - geos=3.9.1
+  - gdal=3.2.1
   # Fatiando a Terra libraries
   - pooch
   - verde
