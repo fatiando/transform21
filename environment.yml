@@ -25,4 +25,4 @@ dependencies:
   # - harmonica
   - pip
   - pip:
-      - git+https://github.com/fatiando/harmonica@prisms-layer
+      - git+https://github.com/fatiando/harmonica
