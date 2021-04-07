@@ -4,7 +4,7 @@ The [Harmonica tutorial at Transform 21](http://schedule.softwareunderground.org
 
 Instructors:
 [Santiago Soler](https://santisoler.github.io)<sup>1,2</sup>,
-[Andra Balza Morales](https://www.andreabalza.com/)<sup>3</sup> and
+[Andrea Balza Morales](https://www.andreabalza.com/)<sup>3</sup> and
 [Agustina Pesce](https://aguspesce.github.io/)<sup>1,2</sup>
 
 > <sup>1</sup> CONICET, Argentina
@@ -75,7 +75,7 @@ There are a few things you'll need to follow the tutorial:
 
 1. A working Python installation (Anaconda or Miniconda)
 2. The Harmonica tutorial *conda environment* installed
-3. A web browser that works with JupyterLab
+3. A web browser that works with Jupyter notebooks
    (basically anything except Internet Explorer)
 
 To get things setup, please do the following.
