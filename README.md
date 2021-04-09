@@ -129,7 +129,7 @@ manager. If you already have one, you can skip this step.
 1. The figure `test_install_output.png` should have been created in your
    current working directory. It should look like this:
 
-[![Output of `test_python.py`.](https://raw.githubusercontent.com/fatiando/transform2020/master/test_install_output.png)](https://raw.githubusercontent.com/fatiando/transform2020/master/test_install_output.png)
+[![Output of `test_python.py`.](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)
 
 If none of these commands gives an error, then your installation should be working.
 If you get any errors or the outputs look significantly different,
