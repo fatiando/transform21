@@ -7,3 +7,4 @@ import pooch
 import harmonica
 import verde
 import boule
+import pygmt

@@ -3,15 +3,26 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python==3.8
+  - python
   - numpy
   - pandas
   - xarray
   - matplotlib
   - jupyterlab
+  - proj
   - pyproj
+  - pygmt==0.3.1
+  - gmt==6.1.1
+  - geos>=3.9.1
+  - gdal
+  - netcdf4
   # Fatiando a Terra libraries
   - pooch
-  - harmonica
   - verde
   - boule
+  # Comment out harmonica and install the version in prism-layer branch
+  # for now
+  # - harmonica
+  - pip
+  - pip:
+      - git+https://github.com/fatiando/harmonica
