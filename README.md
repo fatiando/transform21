@@ -137,11 +137,11 @@ please let us know on Slack at `#t21-thurs-harmonica`.
 
 ### Step 4
 
-**Start Jupyter notebook:**
+**Start JupyterLab:**
 
 1. **Windows users:** Make sure you set a default browser that is **not Internet Explorer**.
 1. Activate the conda environment: `conda activate t21-thurs-harmonica`
-1. Start the Jupyter notebook server: `jupyter notebook`
+1. Start the JupyterLab server: `jupyter lab`
 1. Jupyter should open in your default web browser. We'll start from here in the
    tutorial and create a new notebook together.
 
