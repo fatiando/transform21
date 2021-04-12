@@ -121,9 +121,15 @@ manager. If you already have one, you can skip this step.
 1. Activate the environment: `conda activate t21-thurs-harmonica`
 1. Navigate to the folder where you downloaded `test_install.py`
 1. Run the test script: `python test_install.py`
+1. You should this text in the terminal (the last part of the second line will depend on your system):
+   ```
+   Harmonica version: 0.2.0
+   Downloading file 'south-africa-gravity.ast.xz' from 'https://github.com/fatiando/harmonica/raw/v0.2.0/data/south-africa-gravity.ast.xz' to '/home/USER/.cache/harmonica/v0.2.0'.
+   ```
+1. The figure `test_install_output.png` should have been created in your
+   current working directory. It should look like this:
 
-> Insert the expected outcome of `python test_install` as last item(s) of the
-> list
+[![Output of `test_python.py`.](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)
 
 If none of these commands gives an error, then your installation should be working.
 If you get any errors or the outputs look significantly different,
