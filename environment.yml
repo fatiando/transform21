@@ -19,10 +19,5 @@ dependencies:
   # Fatiando a Terra libraries
   - pooch
   - verde
-  - boule
-  # Comment out harmonica and install the version in prism-layer branch
-  # for now
-  # - harmonica
-  - pip
-  - pip:
-      - git+https://github.com/fatiando/harmonica
+  - boule==0.2.0
+  - harmonica==0.2.0
