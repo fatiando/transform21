@@ -1,4 +1,3 @@
-import pygmt
 import pyproj
 import pooch
 import numpy as np
@@ -6,6 +5,7 @@ import xarray as xr
 import verde as vd
 import boule as bl
 import harmonica as hm
+import matplotlib.pyplot as plt
 
 
 print("Harmonica version: {}".format(hm.__version__))
@@ -15,6 +15,12 @@ data = hm.datasets.fetch_south_africa_gravity()
 url = "https://github.com/fatiando/transform21/raw/main/data/bushveld_topography.nc"
 fname = pooch.retrieve(url, known_hash=None, fname="bushveld_topography.nc")
 topography = xr.load_dataset(fname).bedrock
+
+# Project the dataset coordinates
+projection = pyproj.Proj(proj="merc", lat_ts=data.latitude.mean())
+easting, northing = projection(data.longitude.values, data.latitude.values)
+data = data.assign(easting=easting)
+data = data.assign(northing=northing)
 
 # Cut the datasets to a very small region to run the script faster
 region_deg = (28, 29, -26, -25)
@@ -69,12 +75,6 @@ grid = eql.grid(
 )
 
 # Plot
-projection_gmt = "M15c"
-fig = pygmt.Figure()
-fig.coast(shorelines=True, region=region_deg)
-maxabs = vd.maxabs(grid.bouguer_residuals.values)
-pygmt.makecpt(cmap="polar", series=[-maxabs, maxabs])
-fig.grdimage(grid.bouguer_residuals, projection=projection_gmt)
-fig.basemap(projection=projection_gmt, frame=True)
-fig.colorbar(frame='af+l"Residuals of Bouguer Disturbance [m]"')
-fig.savefig(fname="test_install_output.png")
+grid.bouguer_residuals.plot()
+plt.gca().set_aspect("equal")
+plt.show()
