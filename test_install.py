@@ -45,14 +45,14 @@ data = data.assign(northing=northing)
 topo_plain = vd.project_grid(topography, projection=projection)
 
 # Compute Bouguer disturbance
-topo_prisms = hm.prisms_layer(
+topo_prisms = hm.prism_layer(
     (topo_plain.easting.values, topo_plain.northing.values),
     surface=topo_plain.values,
     reference=0,
     properties={"density": 2670 * np.ones_like(topo_plain.values)},
 )
 coordinates = (data.easting.values, data.northing.values, data.elevation.values)
-result = topo_prisms.prisms_layer.gravity(coordinates, field="g_z")
+result = topo_prisms.prism_layer.gravity(coordinates, field="g_z")
 bouguer_disturbance = data.gravity_disturbance - result
 data = data.assign(bouguer_disturbance=bouguer_disturbance)
 
