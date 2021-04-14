@@ -123,7 +123,7 @@ manager. If you already have one, you can skip this step.
 1. Run the test script: `python test_install.py`
 1. You should this text in the terminal (the last part of the second line will depend on your system):
    ```
-   Harmonica version: 0.2.0
+   Harmonica version: 0.2.1
    Downloading file 'south-africa-gravity.ast.xz' from 'https://github.com/fatiando/harmonica/raw/v0.2.0/data/south-africa-gravity.ast.xz' to '/home/USER/.cache/harmonica/v0.2.0'.
    ```
 1. The figure `test_install_output.png` should have been created in your
