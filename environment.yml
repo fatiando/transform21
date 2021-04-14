@@ -20,4 +20,4 @@ dependencies:
   - pooch
   - verde
   - boule==0.2.0
-  - harmonica==0.2.0
+  - harmonica==0.2.1
