@@ -7,7 +7,16 @@ import boule as bl
 import harmonica as hm
 import matplotlib.pyplot as plt
 
+# Check if the script should be run in parallel or not
+import os
 
+PARALLEL = os.getenv("HARMONICA_PARALLEL")
+if PARALLEL is None:
+    PARALLEL = True
+else:
+    PARALLEL = bool(int(PARALLEL))
+
+# Print Harmonica version
 print("Harmonica version: {}".format(hm.__version__))
 
 # Fetch gravity data and DEM
@@ -52,7 +61,7 @@ topo_prisms = hm.prism_layer(
     properties={"density": 2670 * np.ones_like(topo_plain.values)},
 )
 coordinates = (data.easting.values, data.northing.values, data.elevation.values)
-result = topo_prisms.prism_layer.gravity(coordinates, field="g_z")
+result = topo_prisms.prism_layer.gravity(coordinates, field="g_z", parallel=PARALLEL)
 bouguer_disturbance = data.gravity_disturbance - result
 data = data.assign(bouguer_disturbance=bouguer_disturbance)
 
@@ -63,7 +72,7 @@ residuals = data.bouguer_disturbance - trend.predict(coordinates)
 data = data.assign(bouguer_residuals=residuals)
 
 # Grid
-eql = hm.EQLHarmonic(damping=1e2, relative_depth=5e3)
+eql = hm.EQLHarmonic(damping=1e2, relative_depth=5e3, parallel=PARALLEL)
 eql.fit(coordinates, data.bouguer_residuals.values)
 grid = eql.grid(
     upward=2200,
