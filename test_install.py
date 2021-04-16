@@ -77,3 +77,4 @@ grid = eql.grid(
 # Plot
 grid.bouguer_residuals.plot()
 plt.gca().set_aspect("equal")
+plt.show()
