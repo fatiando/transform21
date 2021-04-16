@@ -75,4 +75,4 @@ jobs:
         run: conda list
 
       - name: Test installation
-        run: python test_install.py
+        run: MPLBACKEND=agg python test_install.py

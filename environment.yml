@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python
+  - python==3.8.*
   - numpy
   - pandas
   - xarray
@@ -11,10 +11,6 @@ dependencies:
   - jupyterlab
   - proj
   - pyproj
-  - pygmt==0.3.1
-  - gmt==6.1.1
-  - geos>=3.9.1
-  - gdal
   - netcdf4
   # Fatiando a Terra libraries
   - pooch
