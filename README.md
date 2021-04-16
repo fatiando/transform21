@@ -126,8 +126,7 @@ manager. If you already have one, you can skip this step.
    Harmonica version: 0.2.1
    Downloading file 'south-africa-gravity.ast.xz' from 'https://github.com/fatiando/harmonica/raw/v0.2.0/data/south-africa-gravity.ast.xz' to '/home/USER/.cache/harmonica/v0.2.0'.
    ```
-1. The figure `test_install_output.png` should have been created in your
-   current working directory. It should look like this:
+1. The following figure should pop up:
 
 [![Output of `test_python.py`.](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)](https://raw.githubusercontent.com/fatiando/transform21/master/test_install_output.png)
 
