@@ -37,7 +37,6 @@ jobs:
     env:
       CONDA_ENV_NAME: t21-thurs-harmonica
       CONDA_ENV_YML: environment.yml
-      HARMONICA_PARALLEL: 0
 
     steps:
       # Cancel any previous run of the test job
