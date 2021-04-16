@@ -150,7 +150,7 @@ If you really can't get things to work on your computer,
 you can run the code online through Google Colab (you will need a Google account).
 A starter notebook that installs Harmonica can be found here:
 
-> insert link to starter notebook
+https://swu.ng/t21-harmonica-colab
 
 To save a copy of the Colab notebook to your own account, click on the
 "Open in playground mode" and then "Save to Drive".
