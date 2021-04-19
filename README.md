@@ -73,7 +73,7 @@ accomplish this by following these steps:
 
 There are a few things you'll need to follow the tutorial:
 
-1. A working Python installation (Anaconda or Miniconda)
+1. A working Python installation ([Anaconda](https://www.anaconda.com/) or Miniconda)
 2. The Harmonica tutorial *conda environment* installed
 3. A web browser that works with Jupyter notebooks
    (basically anything except Internet Explorer)
@@ -88,12 +88,14 @@ this means the "*Anaconda Prompt*" program for you.
 
 ### Step 1
 
-**Follow the general instructions for Transform21:**
+**Install a Python distribution:**
 
-> Insert link to instructions
+In this tutorial we will be using the [Anaconda](https://www.anaconda.com/)
+Python distribution along with the `conda` package manager. If you already have
+Anaconda or Miniconda installed, you can skip this step.
 
-This will get you a working Python 3 installation with the `conda` package
-manager. If you already have one, you can skip this step.
+If not, please follow the instructions for getting Anaconda up and running in
+your system: https://docs.anaconda.com/anaconda/install/
 
 ### Step 2
 
@@ -104,7 +106,8 @@ manager. If you already have one, you can skip this step.
    (right-click and select "Save page as" or similar)
 1. Make sure that the file is called `environment.yml`. Windows sometimes adds a
    `.txt` to the end, which you should remove.
-1. Open a terminal. The following steps should be done in the terminal.
+1. Open a terminal (*Anaconda Prompt* if you are running Windows). The
+   following steps should be done in the terminal.
 1. Navigate to the folder that has the downloaded environment file
    (if you don't know how to do this, take a moment to read [the Software
    Carpentry lesson on the Unix shell](http://swcarpentry.github.io/shell-novice/)).
