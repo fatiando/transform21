@@ -2,6 +2,8 @@
 
 The [Harmonica tutorial at Transform 21](http://schedule.softwareunderground.org/) 💚
 
+[![Bouguer gravity residuals](https://raw.githubusercontent.com/fatiando/transform21/master/bushveld-residuals.png)](https://raw.githubusercontent.com/fatiando/transform21/master/bushveld-residuals.png)
+
 Instructors:
 [Santiago Soler](https://santisoler.github.io)<sup>1,2</sup>,
 [Andrea Balza Morales](https://www.andreabalza.com/)<sup>3</sup> and
