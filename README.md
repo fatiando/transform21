@@ -158,6 +158,11 @@ You might be interested in
 [this tutorial](https://transform2020.sched.com/event/c7Jn/tutorial-using-python-subsurface-tools-no-install-required)
 for an overview of Google Colab.
 
+#### I don't have a Google account
+
+If you cannot use Google Colab, a second alternative option is to use to the
+Software Underground JupyterHub.
+
 ## License
 
 This work is licensed under a
