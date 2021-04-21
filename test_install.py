@@ -32,26 +32,21 @@ topography = topography.sel(
 
 # Compute gravity disturbance
 ell = bl.WGS84
-gravity_disturbance = data.gravity.values - ell.normal_gravity(
-    data.latitude.values, data.elevation.values
-)
+gravity_disturbance = data.gravity - ell.normal_gravity(data.latitude, data.elevation)
 data = data.assign(gravity_disturbance=gravity_disturbance)
 
-# Project data and topography
+# Project topography
 projection = pyproj.Proj(proj="merc", lat_ts=data.latitude.mean())
-easting, northing = projection(data.longitude.values, data.latitude.values)
-data = data.assign(easting=easting)
-data = data.assign(northing=northing)
 topo_plain = vd.project_grid(topography, projection=projection)
 
 # Compute Bouguer disturbance
 topo_prisms = hm.prism_layer(
-    (topo_plain.easting.values, topo_plain.northing.values),
+    (topo_plain.easting, topo_plain.northing),
     surface=topo_plain.values,
     reference=0,
-    properties={"density": 2670 * np.ones_like(topo_plain.values)},
+    properties={"density": 2670 * np.ones_like(topo_plain)},
 )
-coordinates = (data.easting.values, data.northing.values, data.elevation.values)
+coordinates = (data.easting, data.northing, data.elevation)
 result = topo_prisms.prism_layer.gravity(coordinates, field="g_z")
 bouguer_disturbance = data.gravity_disturbance - result
 data = data.assign(bouguer_disturbance=bouguer_disturbance)
@@ -64,7 +59,7 @@ data = data.assign(bouguer_residuals=residuals)
 
 # Grid
 eql = hm.EQLHarmonic(damping=1e2, relative_depth=5e3)
-eql.fit(coordinates, data.bouguer_residuals.values)
+eql.fit(coordinates, data.bouguer_residuals)
 grid = eql.grid(
     upward=2200,
     region=region_deg,
