@@ -161,6 +161,31 @@ You might be interested in
 [this tutorial](https://transform2020.sched.com/event/c7Jn/tutorial-using-python-subsurface-tools-no-install-required)
 for an overview of Google Colab.
 
+#### I don't have a Google account
+
+If you cannot use Google Colab, a second alternative option is to use to the
+Software Underground JupyterHub.
+You need to sign in with your Slack credentials on this website:
+https://jupyter-dev.softwareunderground.org/
+
+For more information about the login process, please read this:
+https://github.com/softwareunderground/jupyterhub-deployment/tree/first-deployment#login-process
+
+Once you are logged in, JupyterHub will ask you to choose a server
+configuration, please choose the `t21-thurs-harmonica` option.
+After JupyterHub sets up an instance for you, it will prompt a JupyterLab
+interface.
+In order to create a new notebook for running during the tutorial, please click
+the `Python [conda env:t21-thurs-harmonica]` button in the Launcher.
+It will create a new notebook running the `t21-thurs-harmonica` environment, so
+you don't need to install any dependency, they are already installed! 🎉
+
+> ⚠️ The Software Undeground JupyterHub instances are still in **experimental
+> phase**. You may expect some unwanted behaviour or sudden crushes. Use it
+> carefully and download the notebook every once in a while to have a backup.⚠️
+
+Thanks [Filippo Broggini](https://www.filippobroggini.com/) for setting this up!
+
 ## License
 
 This work is licensed under a
